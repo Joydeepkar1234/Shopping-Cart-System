@@ -1,0 +1,138 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-container {
+  background-color: lightblue;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header {
+  font-size: 32px;
+  font-weight: bold;
+  color: blueviolet;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav li {
+  margin-left: 25px;
+  font-size: 18px;
+  color: blue;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav li:hover {
+  color: darkblue;
+}
+
+.productContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+  gap: 20px;
+}
+
+.products {
+  width: 23%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.products:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.productDesc {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.add {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.add:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.remove {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.remove:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+.cartPage {
+  padding: 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.cartTitle {
+  font-size: 32px;
+  font-weight: bold;
+  color: #343a40;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.cartTotal {
+  font-size: 26px;
+  color: blue;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
